@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorBlue"
+            app:popupTheme="@style/AppTheme">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application Registration"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_18" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:gravity="center|start"
+
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/companyRegisterRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:text="Company Registered for GSTN"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioButton
+                        android:id="@+id/companyRegister_Yes_RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:text="Yes"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioButton
+                        android:id="@+id/companyRegister_No_RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:text="No"
+                        android:textColor="@color/colorBlack" />
+
+
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_15"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Company name"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Customer Name"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_office_address_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Address Line1"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_office_address_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Address Line2"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Land Mark"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_Gstn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter GSTN"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/select_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select State"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/select_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/select_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select PinCode"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_pancard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter PanCard number"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/fileType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:text="File Type"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioButton
+                        android:id="@+id/radio_gst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_45"
+                        android:buttonTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:paddingLeft="5dp"
+                        android:text="GST"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioButton
+                        android:id="@+id/radio_arn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:text="ARN"
+                        android:textColor="@color/colorBlack" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/application_reciept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Upload Application Reciept"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGray" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorBlue"
+                    android:text="Login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

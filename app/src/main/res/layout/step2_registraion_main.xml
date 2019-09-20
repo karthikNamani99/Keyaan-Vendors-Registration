@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar1"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginRight="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/city_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_18"
+                    android:text="City"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radio_single_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="Single City"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radio_multiple_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="Multi City"
+                    android:textColor="@color/colorBlack" />
+
+
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Number"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter User Name"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sub_catagory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Password"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sub_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Password"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_previous"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:layout_weight="1"
+                    android:text="previous"
+                    android:layout_margin="@dimen/dimen_15"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_15"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:text="next"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorBlue"
+            app:popupTheme="@style/AppTheme">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application Registration"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_18" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    >
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_120sdp"
+           android:padding="@dimen/dimen_25">
+
+            <ImageView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo_1" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorGray"
+                android:text="sagar@gmail.com"
+                android:textColor="@color/colorBlack"
+                android:hint="User Id" />
+
+            <!-- Password Label -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12345678"
+                android:textColorHint="@color/colorGray"
+                android:textColor="@color/colorBlack"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorBlue"
+                android:text="Login"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
